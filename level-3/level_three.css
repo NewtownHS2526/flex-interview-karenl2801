@@ -3,31 +3,52 @@ body {
   }
   
   .footer {
-    height: 300px; /* change this to 150px when you're done*/
-    background-color: whitesmoke;
+    display: flex;
+    height: 150px; /* change this to 150px when you're done*/
+    background-color: #f8f8f8;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 40px 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
   
   .title {
     font-weight: bold;
     font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
   }
   
   .info {
     font-size: 10px;
+    color: #555;
+    line-height: 1.6;
   }
   
+#three {
+  max-width: 250px;
+  text-align: right;
+}
+
   footer .item {
     padding: 10px;
     width: 150px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
       "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
   
   #circle {
+    display: inline-block;
     background-color: green;
     width: 10px;
     height: 10px;
