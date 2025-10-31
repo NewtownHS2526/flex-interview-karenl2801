@@ -9,13 +9,20 @@ body {
   #navbar-one {
     height: 60px;
     padding: 10px;
+    display: flex;
     background-color: lightgray;
+    align-items: center;
+    gap: 20px;
   }
   
   #navbar-two {
     height: 120px;
     padding: 10px;
     background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
   }
   
   .item {
@@ -24,11 +31,16 @@ body {
   
   .album {
     margin: 0 50px;
+    text-align: center;
+  }
+  
+  img {
+    object-fit: cover;
   }
   
   #circle {
     height: 50px;
     width: 50px;
-    background-color: green;
+    background-color: rgb(8, 137, 8);
     border-radius: 50%;
   }
