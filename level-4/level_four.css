@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  width: 150px;
+  width: 150;
 }
 
 .footer .title {
@@ -54,6 +54,14 @@ body {
   flex-shrink: 0;
 }
 
+@media (max-width: 700px) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
   .container {
     margin: 30px;
     padding: 10px;
@@ -69,5 +77,11 @@ body {
 
   .footer .item {
     margin-bottom: 20px;
-    width: 50%;
+    width: 45%;
+  }
+
+  @media (max-width: 400px) {
+    .footer .item {
+      width: 90%;
+    }
   }
